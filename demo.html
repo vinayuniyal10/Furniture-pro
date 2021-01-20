@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<head>
+<html><head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -7,61 +6,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/fp.css">
 </head>
+
 <body>
-<div class="header" id="myHeader">
-  <div class="container">
-  <a href="#default" class="logo">Furnish</a>
-  <div class="header-right">
-    <a class="active" href="#home">Home</a>
-    <a href="#contact">Product</a>
-    <a href="#Service">Service</a>
-     <a href="#Portfoli">Portfoli</a>
-      <a href="#Team">Team</a>
-       <a href="#blog">blog</a>
-  </div>
-</div>
-</div>
-<div id="demo" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-
- 
-  <!-- The slider section -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="assets/images/slide1.jpg" alt="Furniture image" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="assets/images/slide.jpg" alt="Furniture" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="assets/images/slide1.jpg" alt="Furniture image" width="1100" height="500">
-    </div>
-  </div>
-  </div>
-  <!--slider section ends-->
-
-<!--service panel start-->
-  <div class="container" style="padding-top: 100px;">
-    <div class="row">
-       <div class="col-lg-6">
-        <img class="fp" src="assets/images/slide1.jpg" alt="">
-       </div>
-       <div class="col-lg-6">
-        <img class="fp" src="assets/images/slide.jpg" alt="">
-      </div>
-   </div>
- </div>
- <!--service panel ends-->
-
-
-<!-- product panel start-->
-  <div class="bd-example bd-example-tabs" style="padding-top: 100px;">
+	<div class="bd-example bd-example-tabs">
   <div class="row">
     <div class="col-3">
       <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -89,21 +36,13 @@
     </div>
   </div>
 </div>
-<!-- product panel ends-->
+
 
 <script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+	$('#myTab a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
 </script>
 </body>
 </html>
